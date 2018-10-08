@@ -18,6 +18,8 @@ class Scraper
   
   def get_page( page)
     html = open('http://www.google.com')
+    doc = Nokogiri::HTML(html)
+    doc
   end
   
   
